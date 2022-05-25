@@ -1,0 +1,81 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background:url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
+}
+header section{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+section .header-container{
+    width: 80%;
+    height: 97.5%;
+    display: flex;
+    /*flex-direction: column;*/
+    
+    align-items: center;
+    justify-content: space-around;
+}
+header section .header-container p{
+    color: white;
+    font-size: 30px;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+header section .header-container h1{
+    color: white;
+    font-size: 65px;
+    font-weight: 800px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.3);
+}
+form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(218, 214, 214);
+    outline: none;
+    font-size: 16px;
+    
+}
+form input:focus{
+    border-color: rgb(239, 79, 95);
+    box-shadow: 0 0 8px rgb(239, 79, 95);
+}
