@@ -151,8 +151,8 @@ form input:focus{
     height: 98vh;
     position: absolute;
     top: 0%;
-    display: none;
-    /*display: flex;*/
+    /*display: none;*/
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -175,6 +175,15 @@ form input:focus{
     color: rgb(84, 78, 79);
     font-family: 'Arial';
     font-size: 14px;
+}
+#header{
+    color: rgb(63, 61, 61);
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -4%;
+    margin-bottom: 5%;
+
 }
 
 @media only screen and (max-width: 900px){

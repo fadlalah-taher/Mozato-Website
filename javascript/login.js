@@ -6,7 +6,7 @@ var inputPassword = document.getElementById("inputPassword");
 var popup = document.querySelector(".popup");
 
 signBtn.addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "block";
+    popup.style.display = "flex";
 });
 window.onclick = function(event) {
     if (event.target == signBtn) {
