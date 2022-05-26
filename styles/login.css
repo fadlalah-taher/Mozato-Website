@@ -8,7 +8,7 @@ body{
 }
 header{
     width: 100%;
-    height: 100vh;
+    height: 98vh;
     background:url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
 }
 header section{
@@ -25,8 +25,7 @@ section .header-container{
     width: 80%;
     height: 97.5%;
     display: flex;
-    /*flex-direction: column;*/
-    
+    /*flex-direction: column;*/ 
     align-items: center;
     justify-content: space-around;
 }
@@ -86,7 +85,7 @@ form input:focus{
 }
 .input-icons i {
     position: absolute;
-    color: rgb(239, 79, 95);;
+    color: rgb(239, 79, 95);
 }
  
 .input-icons {
@@ -147,12 +146,34 @@ form input:focus{
     justify-content: center;
 }
 .popup{
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.8);
     width: 100%;
-    height: 100%;
+    height: 98vh;
     position: absolute;
     top: 0%;
-    display: none;
+    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
 }
+#hide1 {
+    display: none;
+}
+.inputContainer {
+    width: 100%;
+    margin-bottom: 10px; 
+    position: absolute;
+    margin-left: -3%;
+  }
+.align-a{
+    display: inline;
+    padding-top: 20px;
+}
+.alreadyAccount{
+    margin: 15px 0;
+    text-decoration: none;
+    color: rgb(84, 78, 79);
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
