@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 header{
     width: 100%;
@@ -9,23 +10,85 @@ header{
     overflow: hidden;
     position: relative; 
     object-fit: cover;
-    /*background-image: url("../assets/header.jpg"no-repeat center center/cover);*/
     background:url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
-    
-}/*
-.header-image{
-    position: absolute;
-    top: -20vh;
-    z-index: -1;
+}
+nav > .logo{
+    width: 80px;
+    border-radius: 50%;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
-    height: 100%;
-    
-}*/
-.nav{
+    height: 100px;
     display: flex;
-    list-style: none;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    box-sizing: border-box;
+    z-index: 10;
+    -webkit-box-shadow: 0 1rem 1rem rgba(236, 197, 201, 0.9);
+          box-shadow: 0 1rem 1rem rgb(233, 176, 182, 0.9);
+}
+#profile-icon{
     color: white;
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#profile-icon:hover{
+    color: rgb(239, 79, 95);
+}
+.menu-button{
+    display: none;
+}
+#span-icon{
+    display: none;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  
+}
+#home-line{
+    border-bottom: 2px solid white;
+}
+
+.menu-item {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 24px;
+    cursor: pointer;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menu-item:hover{
+    color: rgb(239, 79, 95);
+}
+nav .menu-item .line{
+    border-bottom: white;
+    margin-left: 20%;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+    align-items: center;
+    color: white;
+}
+.head h1{
+    font-size: 8rem;
+}
+.head h3{
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 900px){
+    .head h1{
+        font-size: 5rem;
+    }
+    .head h3{
+        font-size: 2rem;
+    }
+    #menu-btn {
+        display: inline-block;
+    }
+
 }
