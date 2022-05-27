@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; 
+    object-fit: cover;
+    /*background-image: url("../assets/header.jpg"no-repeat center center/cover);*/
+    background:url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
+    
+}/*
+.header-image{
+    position: absolute;
+    top: -20vh;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    
+}*/
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
