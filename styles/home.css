@@ -148,13 +148,17 @@ nav .menu-item .line{
   .card {
     margin: 40px;
     position: relative;
-    max-width: 250px;
-    max-height: 300px;
+    max-width: 300px;
+    max-height: 350px;
     box-shadow: 0 40px 60px -6px rgb(228, 38, 57);
     border-radius: 20px;
     background-color: rgb(239, 79, 95);
     margin-bottom: 10%;
   }
+  .card:hover {
+    transform: scale(1.2);
+    z-index: 3;
+}
   
   .card-title {
     display: block;
@@ -173,13 +177,31 @@ nav .menu-item .line{
     object-fit: cover;
     display: block;
     position: relative;
+    
   }
   .top-restaurants h1{
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: rgb(239, 79, 95);
     margin: 40px 0 20px 0;
     text-align: center;
   }
+
+/* footer */
+.first img{
+    width: 128px;
+    height: 32px;
+}
+.section{
+    padding: 40px 120px;
+    background-color: rgb(244, 244, 253);
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+.first-1{
+    display: ;
+}
 @media (max-width: 850px) {
     .overlay a {font-size: 40px}
     .overlay .closebtn {
@@ -213,5 +235,11 @@ nav .menu-item .line{
     #menu-btn {
         display: inline-block;
     }
+    .card{
+        max-width: 250px;
+        max-height: 300px;
+        margin-bottom: 15%;
+    }
+    
 
 }
