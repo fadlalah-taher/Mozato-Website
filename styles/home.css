@@ -288,7 +288,30 @@ nav .menu-item .line{
         max-height: 300px;
         margin-bottom: 15%;
     }
-    
+    .second{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*align-items: center; */
+        align-content: center;  
+    }
+    .first{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    .second-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-1 a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .box{
         display: flex;
         flex-direction: column;
