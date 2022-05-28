@@ -185,7 +185,6 @@ form input:focus{
     margin-bottom: 5%;
 
 }
-
 @media only screen and (max-width: 900px){
     section .header-container{
         flex-direction: column;
