@@ -378,6 +378,7 @@ form input:focus{
     #profile-icon{
         display: none;
     }
+    /* burger menu*/
     .menu-item {
         display: none;
     }

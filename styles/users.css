@@ -12,10 +12,9 @@
   header{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     position: relative; 
     object-fit: cover;
-    background:url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
+    background-color: #f3f3f3;
 }
 
 #profile-icon{
@@ -138,58 +137,34 @@ nav {
     margin-top: 8%;
 }
 .container{
-    width: 550px;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
 }
-  
-.container .left{
-    width: 35%;
-    background: linear-gradient(to right,rgb(237, 155, 163),rgb(239, 79, 95));
-    font-size: 20px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    text-align: center;
-    color: #fff;
-}
-  
-  .container .left img{
-    border-radius: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .container .left h4{
-    margin-bottom: 10px;
-  }
-  
-  .container .left p{
-    font-size: 12px;
-  }
-  
-  .container .right{
-    width: 65%;
+.container .right{
+    width: 100%;
     background: #fff;
     padding: 30px 25px;
     border-radius: 10px;
-  }
+}
   
-  .container .right .info,
-  .container .right .projects{
+.container .right .info,
+.container .right .projects{
     margin-bottom: 25px;
-  }
+}
   
-  .container .right .info h3,
-  .container .right .projects h3{
+.container .right .info h3,
+.container .right .projects h3{
       margin-bottom: 15px;
       padding-bottom: 5px;
       border-bottom: 1px solid #e0e0e0;
       color: rgb(239, 79, 95);
     text-transform: uppercase;
     letter-spacing: 5px;
-  }
+}
   
   .container .right .info_data,
   .container .right .projects_data{
@@ -216,11 +191,25 @@ nav {
   }
 
   @media only screen and (max-width: 900px){
-       /* Users */
+    /* Users */
     .row{
         flex-direction: column;
+        
     }
     .container{
         padding-top: 5%;
+        margin-bottom: 5%;
+    }
+    /* burger menu*/
+    .menu-item {
+        display: none;
+    }
+    #span-icon{
+        display: block;
+        color: white;
+        margin-left: 0%;
+    }
+    #profile-icon{
+        display: none;
     }
   }
