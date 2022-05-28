@@ -133,8 +133,8 @@ nav .menu-item .line{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white
-
+    background-color: white;
+    margin-top: 5%;
   }
   
   .cards {
@@ -194,6 +194,7 @@ nav .menu-item .line{
 .section{
     padding: 40px 120px;
     background-color: rgb(244, 244, 253);
+    margin-top: 10%;
 }
 .first{
     display: flex;
@@ -203,6 +204,7 @@ nav .menu-item .line{
 .second{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 30px 0;
 }
 .second div{
@@ -241,6 +243,10 @@ nav .menu-item .line{
     color: gray;
     font-size: 0.9rem;
 }
+.second-1{
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width: 850px) {
     .overlay a {font-size: 40px}
     .overlay .closebtn {
@@ -249,7 +255,10 @@ nav .menu-item .line{
     right: 35px;
 }
 }
-
+@media only screen and (max-width: 700px){
+    
+    
+}
 @media only screen and (max-width: 900px){
     .head h1{
         font-size: 5rem;
@@ -279,6 +288,42 @@ nav .menu-item .line{
         max-height: 300px;
         margin-bottom: 15%;
     }
+    .second{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*align-items: center; */
+        align-content: center;  
+    }
+    .first{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    .second-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-1 a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
     
-
 }
