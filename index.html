@@ -26,7 +26,11 @@
                             </div>
                             <div class="input-login">
                                 <i class="fas fa-key icon"></i>
-                                <input type="password" class="input-field" placeholder="Password">
+                                <input type="password" id="inputPassword" class="input-field" placeholder="Password">
+                                <span class="inputContainer" id="password-icon">
+                                    <i id="hide1" class="far fa-eye icon"></i>
+                                    <i id="hide2" class="far fa-eye-slash icon"></i>
+                                </span>
                             </div>
                        </div>
                         <a href="" class="loginBtn">Log In</a>
@@ -63,6 +67,27 @@
                                 <i id="hide1" class="far fa-eye icon"></i>
                                 <i id="hide2" class="far fa-eye-slash icon"></i>
                                 </span>
+                            </div>
+                            <div class="input-login">
+                                <i class="fa-solid fa-phone icon"></i>
+                                <input type="text" placeholder="Phone Number" class="input-field"  name="number" required>
+                            </div>
+                            <div class="input-login">
+                                <i class="fa fa-child icon" aria-hidden="true"></i>
+                                <input type="number" id="age" name="age" class="input-field" placeholder="Age" min="18" max="80" required>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio" for="male">
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    Male
+                                    <span></span>
+                                </label>
+
+                                <label class="radio" for="female">
+                                    <input type="radio" name="gender" id="female" value="female">
+                                    Female
+                                    <span></span>
+                                </label>
                             </div>
                        </div>
                         <a href="" class="loginBtn create">Create Acount</a>

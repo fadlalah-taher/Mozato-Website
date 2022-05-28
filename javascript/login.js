@@ -7,10 +7,12 @@ var popup = document.querySelector(".popup");
 
 signBtn.addEventListener("click", function(){
     popup.style.display = "flex";
+    console.log("Hello flex");
 });
 window.onclick = function(event) {
     if (event.target == signBtn) {
         signBtn.style.display = "none";
+        console.log("hello window none");
     }
 }
 passwordIcon.addEventListener("click", function(){
