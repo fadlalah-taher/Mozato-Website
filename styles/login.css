@@ -185,6 +185,54 @@ form input:focus{
     margin-bottom: 5%;
 
 }
+
+/* radio button */
+
+.radio{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline;
+    vertical-align: middle;
+    color: rgb(96, 91, 91);
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.radio + .radio{
+    margin-left: 20px;
+}
+.radio input[type="radio"]{
+    display: none;
+}
+.radio span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border:3px solid rgb(239, 79, 95);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+.radio span::after{
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: rgb(239, 79, 95);
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+.radio input[type="radio"]:checked ~ span:after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Media Query*/
 @media only screen and (max-width: 900px){
     section .header-container{
         flex-direction: column;
