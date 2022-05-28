@@ -21,7 +21,7 @@ window.onclick = function(event) {
     }
 }
 
-// hidden password
+// unhidden password
 
 passwordIcon.addEventListener("click", function(){
     if(inputPassword.type === 'password'){
