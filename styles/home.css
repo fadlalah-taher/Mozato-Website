@@ -13,7 +13,7 @@ header{
     background:url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
 }
 nav > .logo{
-    width: 80px;
+    width: 80px;    
     border-radius: 50%;
 }
 nav {
@@ -341,7 +341,6 @@ form input:focus{
 .doneBtn:hover{
     background-color: rgb(227, 58, 75);
 }
-
 
 
 

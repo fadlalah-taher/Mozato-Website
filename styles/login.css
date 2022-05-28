@@ -9,6 +9,7 @@ body{
 header{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
     background:url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
 }
 header section{
