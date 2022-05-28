@@ -8,7 +8,7 @@ var inputRegister = document.getElementById("inputPassword-register");
 var popup = document.querySelector(".popup");
 
 
-// burger Menu
+// Adding Register Form
 
 signBtn.addEventListener("click", function(){
     popup.style.display = "flex";
