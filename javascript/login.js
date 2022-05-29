@@ -37,6 +37,7 @@ loginBtn.addEventListener("click", function(){
                 data: data,
             })
             .then(function (response) {
+              window.localStorage.setItem("user_id", response.data.user_id);
                 window.location = "file:///C:/xampp/htdocs/Mozato/pages/home.html"
                 }
             ) 

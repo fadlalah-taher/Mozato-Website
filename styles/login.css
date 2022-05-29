@@ -245,5 +245,9 @@ form input:focus{
         align-items: center;
         justify-content: center;
     }
+    .inputContainer i{
+        margin-left: -30px;
+    }
+    
 
 }

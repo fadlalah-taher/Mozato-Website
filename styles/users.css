@@ -68,6 +68,9 @@ nav .menu-item .line{
 .head h3{
     font-size: 4rem;
 }
+#admin{
+    display: none;
+}
 /* Burger menu */
 .overlay {
     height: 100%;
