@@ -5,7 +5,7 @@ include("connection.php");
 $fullname = $_POST["full_name"];
 $email = $_POST["email"];
 $password = $_POST["password"];
-$phonenumber = $_POST["phone_number"];
+$phonenumber = $_POST["phone_number"];  
 $address = $_POST["address"];
 $gender = $_POST["gender"];
 $age = $_POST["age"];
