@@ -23,7 +23,7 @@ window.onload = (function(){
                             </div>
                             <div class="data">
                             <h4>Phone</h4>
-                                <p>76333450</p>
+                                <p>${user.phone_number}</p>
                         </div>
                         </div>
                     </div>
@@ -33,22 +33,18 @@ window.onload = (function(){
                         <div class="projects_data">
                             <div class="data">
                                 <h4>Address</h4>
-                                <p>Tyre</p>
-                            </div>
-                            <div class="data">
-                            <h4>Gender</h4>
-                                <p>Male</p>
+                                <p>${user.address}</p>
                             </div>
                             <div class="data">
                                 <h4>Age</h4>
-                                    <p>22</p>
+                                    <p>${user.age}</p>
                                 </div>
                         </div>
                     </div>
                 </div>
             </div>`;
             usersContainer.innerHTML +=userHtml;
-        });
+        })
         console.log(response);
         }
     )

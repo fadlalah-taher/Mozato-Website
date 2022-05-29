@@ -16,7 +16,7 @@ $query->bind_param("sssssi", $fullname, $email, $password, $phonenumber, $addres
 $query->execute();
 
 $response = [];
-$response["success"] = true;
+$response["success Updated"] = true;
 
 echo json_encode($response);
 

@@ -12,7 +12,7 @@ $age = $_POST["age"];
 $user_role = 0;
 
 $query = $mysqli->prepare("INSERT INTO users(full_name, email, password, phone_number, address, user_role, gender, age) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-$query->bind_param("sssssiii", $fullname, $email, $password, $phonenumber, $address, $gender, $age, $user_role);
+$query->bind_param("sssssiii", $fullname, $email, $password, $phonenumber, $address,$user_role, $gender, $age);
 $query->execute();
 
 $response = [];
