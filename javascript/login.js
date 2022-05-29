@@ -9,7 +9,7 @@ var popup = document.querySelector(".popup");
 var loginBtn = document.getElementById("loginBtn");
 var emailInput = document.getElementById("emailInput");
 
-/* */
+/* axios register */
 var createBtn = document.getElementById("createBtn");
 var registerForm = document.getElementById("createAcount");
 
@@ -36,22 +36,23 @@ loginBtn.addEventListener("click", function(){
                 data: data,
             })
             .then(function (response) {
-                window.location = "Mozato/pages/home.html"
+                window.location = "file:///C:/xampp/htdocs/Mozato/pages/home.html"
                 }
             ) 
 });
+
 // Adding Register Form
 
 signBtn.addEventListener("click", function(){
     popup.style.display = "flex";
     console.log("Hello flex");
 });
-window.onclick = function(event) {
+/*window.onclick = function(event) {
     if (event.target == signBtn) {
         signBtn.style.display = "none";
         console.log("hello window none");
     }
-}
+}*/
 
 // unhidden password
 
