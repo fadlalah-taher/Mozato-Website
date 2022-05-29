@@ -4,7 +4,7 @@ include("connection.php");
 
 $fullname = $_POST["full_name"];
 $email = $_POST["email"];
-$password = $_POST["password"];
+$password = hash("sha256", $_POST["password"]);
 $phonenumber = $_POST["phone_number"];  
 $address = $_POST["address"];
 $gender = $_POST["gender"];

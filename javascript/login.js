@@ -6,8 +6,40 @@ var passwordRegister = document.getElementById("passwordRegister-icon");
 var inputPassword = document.getElementById("inputPassword");
 var inputRegister = document.getElementById("inputPassword-register");
 var popup = document.querySelector(".popup");
+var loginBtn = document.getElementById("loginBtn");
+var emailInput = document.getElementById("emailInput");
 
+/* */
+var createBtn = document.getElementById("createBtn");
+var registerForm = document.getElementById("createAcount");
 
+createBtn.addEventListener("click", function(){
+  
+  let data = new FormData(registerForm);
+            axios({
+                method: 'post',
+                url: 'http://localhost/Mozato/php/register.php',
+                data: data,
+            })
+            .then(function (response) {
+                console.log(response);
+                }
+            )
+});
+loginBtn.addEventListener("click", function(){
+  let data = new FormData();
+            data.append('email', emailInput.value);
+            data.append('password', inputPassword.value);
+            axios({
+                method: 'post',
+                url: 'http://localhost/Mozato/php/login.php',
+                data: data,
+            })
+            .then(function (response) {
+                window.location = "/pages/home.html"
+                }
+            ) 
+});
 // Adding Register Form
 
 signBtn.addEventListener("click", function(){

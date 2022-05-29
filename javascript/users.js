@@ -7,3 +7,4 @@ icon.addEventListener("click", function(){
 myNav.addEventListener("click", function(){
     myNav.style.width = "0%";
 });
+

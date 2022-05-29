@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="styles/login.css">
     <title>Mozato</title>
 </head>
@@ -22,7 +24,7 @@
                             <h1 id="header">Log in</h1>
                             <div class="input-login">
                                 <i class="far fa-envelope icon"></i>
-                                <input type="text" class="input-field" placeholder="Email address ">
+                                <input id="emailInput" type="text" class="input-field" placeholder="Email address ">
                             </div>
                             <div class="input-login">
                                 <i class="fas fa-key icon"></i>
@@ -33,7 +35,7 @@
                                 </span>
                             </div>
                        </div>
-                        <a href="" class="loginBtn">Log In</a>
+                        <a href="#" id="loginBtn" class="loginBtn">Log In</a>
                         <a href="" class="forget">Forgotten password?</a>
                         <div class="signup">
                             <a href="" id="signBtn" class="signBtn">Register</a>
@@ -49,20 +51,20 @@
                     <p></p>
                 </div>
                 <div class="right-container">
-                    <form action="">
+                    <form id="createAcount" action="">
                         <h1 id="header">Sign up</h1>
                         <div class="input-icons">
                             <div class="input-login">
                                 <i class='fas fa-arrow-circle-right icon'></i>
-                                <input type="text" class="input-field" placeholder="Full Name">
+                                <input name="full_name" type="text" class="input-field" placeholder="Full Name">
                             </div>
                             <div class="input-login">
                                 <i class="far fa-envelope icon"></i>
-                                <input type="text" class="input-field" placeholder="Email address ">
+                                <input name="email" type="text" class="input-field" placeholder="Email address ">
                             </div>
                             <div class="input-login">
                                 <i class="fas fa-key icon"></i>
-                                <input type="password" id="inputPassword-register" class="input-field" placeholder="Password">
+                                <input type="password" name="password" id="inputPassword-register" class="input-field" placeholder="Password">
                                 <span class="inputContainer" id="passwordRegister-icon">
                                 <i id="hide3" class="far fa-eye icon"></i>
                                 <i id="hide4" class="far fa-eye-slash icon"></i>
@@ -70,7 +72,11 @@
                             </div>
                             <div class="input-login">
                                 <i class="fa-solid fa-phone icon"></i>
-                                <input type="text" placeholder="Phone Number" class="input-field"  name="number" required>
+                                <input type="text"  placeholder="Phone Number" class="input-field"  name="phone_number" required>
+                            </div>
+                            <div class="input-login">
+                                <i class="fa-solid fa-phone icon"></i>
+                                <input type="text"  placeholder="Address" class="input-field"  name="address" required>
                             </div>
                             <div class="input-login">
                                 <i class="fa fa-child icon" aria-hidden="true"></i>
@@ -90,7 +96,7 @@
                                 </label>
                             </div>
                        </div>
-                        <a href="" class="loginBtn create">Create Acount</a>
+                        <a href="#" id="createBtn" class="loginBtn create">Create Acount</a>
                         <div class="align-a">
                         <a href="" class="alreadyAccount">Already have an account? <a href="" class="forget">Log in</a></a>
                         </div>
