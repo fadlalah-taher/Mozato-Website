@@ -36,7 +36,7 @@ loginBtn.addEventListener("click", function(){
                 data: data,
             })
             .then(function (response) {
-                window.location = "/pages/home.html"
+                window.location = "Mozato/pages/home.html"
                 }
             ) 
 });
