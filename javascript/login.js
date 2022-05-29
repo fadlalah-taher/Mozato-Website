@@ -8,6 +8,7 @@ var inputRegister = document.getElementById("inputPassword-register");
 var popup = document.querySelector(".popup");
 var loginBtn = document.getElementById("loginBtn");
 var emailInput = document.getElementById("emailInput");
+var registerSection = document.getElementById("register-section");
 
 /* axios register */
 var createBtn = document.getElementById("createBtn");
@@ -47,12 +48,14 @@ signBtn.addEventListener("click", function(){
     popup.style.display = "flex";
     console.log("Hello flex");
 });
-/*window.onclick = function(event) {
-    if (event.target == signBtn) {
-        signBtn.style.display = "none";
+
+window.onclick = function(event) {
+  console.log(event.target);
+    if (event.target == registerSection) {
+      popup.style.display = "none";
         console.log("hello window none");
     }
-}*/
+}
 
 // unhidden password
 
