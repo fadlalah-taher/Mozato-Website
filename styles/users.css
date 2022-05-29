@@ -132,17 +132,19 @@ nav {
  /**/
 .row{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin-top: 8%;
 }
 .container{
-    width: 400px;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    margin-top: 20px;
 }
 .container .right{
     width: 100%;
@@ -197,6 +199,7 @@ nav {
         
     }
     .container{
+        width: 400px;
         padding-top: 5%;
         margin-bottom: 5%;
     }
