@@ -29,44 +29,44 @@ var createBtn = document.getElementById("createBtn");
 var registerForm = document.getElementById("createAcount");
 
 createBtn.addEventListener("click", function(){
-  
+
   let data = new FormData(registerForm);
-            axios({
-                method: 'post',
-                url: 'http://localhost/Mozato/php/register.php',
-                data: data,
-            })
-            .then(function (response) { 
-                if(email.value == "" ||  number.value == "" ||  age.value == "" ||  address.value == "" ||  fullName.value == "" || (male.value == "" || female.value == "")){
-                  createdAccount.style.display = "block";
-                }
-                else{
-                  console.log(response);
-                  window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
-                }
-              }
-            )
+  axios({
+      method: 'post',
+      url: 'http://localhost/Mozato/php/register.php',
+      data: data,
+  })
+  .then(function (response) { 
+      if(email.value == "" ||  number.value == "" ||  age.value == "" ||  address.value == "" ||  fullName.value == "" || (male.value == "" || female.value == "")){
+        createdAccount.style.display = "block";
+      }
+      else{
+        console.log(response);
+        window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
+      }
+    }
+  )
 });
 loginBtn.addEventListener("click", function(){
   let data = new FormData();
-            data.append('email', emailInput.value);
-            data.append('password', inputPassword.value);
-            axios({
-                method: 'post',
-                url: 'http://localhost/Mozato/php/login.php',
-                data: data,
-            })
-            .then(function (response) {
-              if(emailInput.value == "" ||  inputPassword.value == ""){
-                invalidEmail.style.display = "block";   
-                //window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
-              }
-              else{
-              window.localStorage.setItem("user_id", response.data.user_id);
-              window.location = "file:///C:/xampp/htdocs/Mozato/pages/home.html";
-              }
-              }
-            ) 
+  data.append('email', emailInput.value);
+  data.append('password', inputPassword.value);
+  axios({
+      method: 'post',
+      url: 'http://localhost/Mozato/php/login.php',
+      data: data,
+  })
+  .then(function (response) {
+    if(emailInput.value == "" ||  inputPassword.value == ""){
+      invalidEmail.style.display = "block";   
+      //window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
+    }
+    else{
+    window.localStorage.setItem("user_id", response.data.user_id);
+    window.location = "file:///C:/xampp/htdocs/Mozato/pages/home.html";
+    }
+    }
+  ) 
 });
 
 // Adding Register Form
@@ -86,29 +86,29 @@ window.onclick = function(event) {
 // unhidden password
 
 passwordIcon.addEventListener("click", function(){
-    if(inputPassword.type === 'password'){
-        inputPassword.type = "text";
-        hide1.style.display = "block";
-        hide2.style.display = "none";
-      }
-      else{
-        inputPassword.type = "password";
-        hide1.style.display = "none";
-        hide2.style.display = "block";
+  if(inputPassword.type === 'password'){
+      inputPassword.type = "text";
+      hide1.style.display = "block";
+      hide2.style.display = "none";
+    }
+    else{
+      inputPassword.type = "password";
+      hide1.style.display = "none";
+      hide2.style.display = "block";
 
-      }
+    }
 });
 passwordRegister.addEventListener("click", function(){
-    if(inputRegister.type === 'password'){
-        inputRegister.type = "text";
-        hide3.style.display = "block";
-        hide4.style.display = "none";
-      }
-      else{
-        inputRegister.type = "password";
-        hide3.style.display = "none";
-        hide4.style.display = "block";
+  if(inputRegister.type === 'password'){
+      inputRegister.type = "text";
+      hide3.style.display = "block";
+      hide4.style.display = "none";
+    }
+    else{
+      inputRegister.type = "password";
+      hide3.style.display = "none";
+      hide4.style.display = "block";
 
-      }
+    }
 });
 
