@@ -37,5 +37,32 @@ window.onload = (function(){
         }
       ) 
 });
+/*
+window.onload = (function(){
+    axios({
+        method: 'post',
+        url: 'http://localhost/Mozato/php/restaurants-home.php',
+    })
+    .then(function(response){
+        let restaurants = response.data;
+        restaurantContainer.innerHTML = "";//to continue
+        restaurants.forEach(rest => {`
+        <div class="cards">
+                <div class="card">
+                <h2 class="card-title">Mexican</h2>
+                <img src="../assets/mexican.jpeg" alt="">
+                </div>
+                <div class="card">
+                <h2 class="card-title">Pizza</h2>
+                <img src="../assets/pizzeria1.jpg" alt="">
+                </div>
+                <div class="card">
+                <h2 class="card-title">Vegan</h2>
+                <img src="../assets/vegan.jpg" alt="">
+                </div>
+            </div>`    
+        });
+    })
+})*/
 
 

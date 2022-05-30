@@ -4,6 +4,7 @@ header('Access-Control-Allow-Origin: *');
 include("connection.php");
 $email = $_POST["email"];
 $password = hash("sha256", $_POST["password"]);
+
 $query = $mysqli->prepare("Select user_id from users where email = ? AND password = ?");
 $query->bind_param("ss",$email, $password);
 $query->execute();

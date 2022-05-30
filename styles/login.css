@@ -258,3 +258,25 @@ form input:focus{
     
 
 }
+
+/* Media Query phones*/
+@media (max-width: 400px){
+    form{
+        width: 280px;
+        margin-top: 25px;
+    }
+    section .header-container{
+        flex-direction: column;
+    }
+    .left-container p{
+        display: none;
+    }
+    .left-container > h1{
+        font-size: 10px;
+    }
+
+    .inputContainer i{
+        margin-left: -30px;
+    }
+    
+}
