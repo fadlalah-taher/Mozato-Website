@@ -1,4 +1,7 @@
+// buttons
 var signBtn = document.getElementById("signBtn");
+var loginBtn = document.getElementById("loginBtn");
+// hide password icons
 var hide1 = document.getElementById("hide1");
 var hide2 = document.getElementById("hide2");
 var passwordIcon = document.getElementById("password-icon");
@@ -6,9 +9,20 @@ var passwordRegister = document.getElementById("passwordRegister-icon");
 var inputPassword = document.getElementById("inputPassword");
 var inputRegister = document.getElementById("inputPassword-register");
 var popup = document.querySelector(".popup");
-var loginBtn = document.getElementById("loginBtn");
+// email and register popup message
 var emailInput = document.getElementById("emailInput");
 var registerSection = document.getElementById("register-section");
+var invalidEmail = document.getElementById("invalidEmail");
+var createdAccount = document.getElementById("createdAccount");
+
+// register input 
+var fullName = document.getElementById("full_name");
+var number = document.getElementById("number");
+var address = document.getElementById("address");
+var age = document.getElementById("age");
+var email = document.getElementById("email");
+var male = document.getElementById("male");
+var female = document.getElementById("female");
 
 /* axios register */
 var createBtn = document.getElementById("createBtn");
@@ -22,10 +36,15 @@ createBtn.addEventListener("click", function(){
                 url: 'http://localhost/Mozato/php/register.php',
                 data: data,
             })
-            .then(function (response) {
-                console.log(response);
-                window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
+            .then(function (response) { 
+                if(email.value == "" ||  number.value == "" ||  age.value == "" ||  address.value == "" ||  fullName.value == "" || (male.value == "" || female.value == "")){
+                  createdAccount.style.display = "block";
                 }
+                else{
+                  console.log(response);
+                  window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
+                }
+              }
             )
 });
 loginBtn.addEventListener("click", function(){
@@ -39,7 +58,8 @@ loginBtn.addEventListener("click", function(){
             })
             .then(function (response) {
               if(emailInput.value == "" ||  inputPassword.value == ""){
-                window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
+                invalidEmail.style.display = "block";   
+                //window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
               }
               else{
               window.localStorage.setItem("user_id", response.data.user_id);

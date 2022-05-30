@@ -7,6 +7,7 @@ var hide2 = document.getElementById("hide2");
 var profileForm = document.getElementById("profile-container");
 var doneBtn = document.getElementById("doneBtn");
 var editForm = document.getElementById("editProfile");
+var profileHeader = document.getElementById("header-profile");
 
 // Burger menu
 
@@ -44,6 +45,7 @@ doneBtn.addEventListener("click", function(){
   })
   .then(function (response) {
       console.log(response);
+      profileHeader.innerHTML = "Updated Successfully";
       }
   )
   //console.log(window.localStorage.getItem("user_id"));

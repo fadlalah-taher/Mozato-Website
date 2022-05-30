@@ -71,7 +71,9 @@ nav .menu-item .line{
 #admin{
     display: none;
 }
+
 /* Burger menu */
+
 .overlay {
     height: 100%;
     width: 0;
