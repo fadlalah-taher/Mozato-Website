@@ -24,8 +24,10 @@ window.onload = (function(){
     .then(function (response) {
         console.log(response.data[0]["user_role"]);
         if(response.data[0]["user_role"] == 1){
-            admin.style.display = "block";
-            /*about.style.display = "none";*/
+            admin.style.display = "flex";
+            admin.style.marginRight = "-8%";
+            admin.style.marginTop = "-5%";
+            admin.style.justifyContent = "end";
         }
         else{
             admin.style.display = "none";

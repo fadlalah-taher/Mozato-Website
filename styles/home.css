@@ -165,10 +165,14 @@ nav .menu-item .line{
   .card:hover {
     transform: scale(1.2);
     z-index: 3;
-}/*
+}
 #admin{
-    display: none;
-}*/ 
+    /*display: none;*/
+    /*display: inline;*/
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
   .card-title {
     display: block;
     text-align: center;
