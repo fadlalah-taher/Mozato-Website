@@ -3,7 +3,7 @@
 header('Access-Control-Allow-Origin: *');
 include("connection.php");
 
-$query = $mysqli->prepare("SELECT full_name, email, phone_number, address, gender , age from users");
+$query = $mysqli->prepare("SELECT name, img from restaurants");
 $query->execute();
 $array = $query->get_result();
 $response = [];

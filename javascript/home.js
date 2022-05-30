@@ -2,6 +2,8 @@ var myNav = document.getElementById("myNav");
 var icon = document.getElementById("span-icon");
 var admin = document.getElementById("admin");
 var about = document.getElementById("about");
+// restaurant container
+var restaurantContainer = document.getElementById("restaurants-container");
 
 console.log("helo");
 icon.addEventListener("click", function(){
