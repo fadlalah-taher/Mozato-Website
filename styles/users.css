@@ -174,82 +174,84 @@ nav {
     letter-spacing: 5px;
 }
   
-  .container .right .info_data,
-  .container .right .projects_data{
+.container .right .info_data,
+.container .right .projects_data{
     display: flex;
     justify-content: space-between;
-  }
-  
-  .container .right .info_data .data,
-  .container .right .projects_data .data{
+}
+
+.container .right .info_data .data,
+.container .right .projects_data .data{
     width: 45%;
-  }
-  
-  .container .right .info_data .data h4,
-  .container .right .projects_data .data h4{
-      color: #353c4e;
-      margin-bottom: 5px;
-  }
-  
-  .container .right .info_data .data p,
-  .container .right .projects_data .data p{
+}
+
+.container .right .info_data .data h4,
+.container .right .projects_data .data h4{
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.container .right .info_data .data p,
+.container .right .projects_data .data p{
     font-size: 13px;
     margin-bottom: 10px;
     color: #919aa3;
-  }
+}
 
-  @media only screen and (max-width: 900px){
-    /* Users */
-    .row{
-        flex-direction: column;
-        
-    }
-    .container{
-        width: 400px;
-        padding-top: 5%;
-        margin-bottom: 5%;
-    }
-    /* burger menu*/
-    .menu-item {
-        display: none;
-    }
-    #span-icon{
-        display: block;
-        color: white;
-        margin-left: 0%;
-    }
-    #profile-icon{
-        display: none;
-    }
-  }
-  @media (max-width: 850px) {
-    .overlay a {
-        font-size: 40px
-    }
-    .overlay .closebtn {
+  
+
+@media only screen and (max-width: 900px){
+/* Users */
+.row{
+    flex-direction: column;
+    
+}
+.container{
+    width: 400px;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+/* burger menu*/
+.menu-item {
+    display: none;
+}
+#span-icon{
+    display: block;
+    color: white;
+    margin-left: 0%;
+}
+#profile-icon{
+    display: none;
+}
+}
+@media (max-width: 850px) {
+.overlay a {
+    font-size: 40px
+}
+.overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
 }
 }
-  @media (max-width: 500px){
-    nav > .logo{
-        margin-left: -100px;
-    }
-    #span-icon{
-        margin-right: -500px;
-    }
-    .overlay a {
-        font-size: 30px;
-        margin-left: -300px;
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        margin-right: 50%;
-    }
-    .container .right{
-        width: 70%;
-        padding: 25px 20px;
-    }
-    
-  }
+@media (max-width: 500px){
+nav > .logo{
+    margin-left: -100px;
+}
+#span-icon{
+    margin-right: -500px;
+}
+.overlay a {
+    font-size: 30px;
+    margin-left: -300px;
+}
+.overlay .closebtn {
+    font-size: 40px;
+    margin-right: 50%;
+}
+.container .right{
+    width: 70%;
+    padding: 25px 20px;
+}
+
+}
