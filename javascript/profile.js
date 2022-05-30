@@ -9,8 +9,14 @@ var doneBtn = document.getElementById("doneBtn");
 var editForm = document.getElementById("editProfile");
 var profileHeader = document.getElementById("header-profile");
 
-// Burger menu
+// input fields
+var fullName = document.getElementById("name");
+var age = document.getElementById("age");
+var address = document.getElementById("address");
+var phoneNumber = document.getElementById("phonenumber");
+var email = document.getElementById("email");
 
+// Burger menu
 icon.addEventListener("click", function(){
     myNav.style.width = "100%";
 });
@@ -46,6 +52,13 @@ doneBtn.addEventListener("click", function(){
   .then(function (response) {
       console.log(response);
       profileHeader.innerHTML = "Updated Successfully";
+      //clear fields
+      age.value = '';
+      email.value = '';
+      fullName.value = '';
+      inputPassword.value = '';
+      phoneNumber.value = '';
+      address.value = '';
       }
   )
   //console.log(window.localStorage.getItem("user_id"));
