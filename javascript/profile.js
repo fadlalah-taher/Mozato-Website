@@ -6,7 +6,7 @@ var hide1 = document.getElementById("hide1");
 var hide2 = document.getElementById("hide2");
 var profileForm = document.getElementById("profile-container");
 var doneBtn = document.getElementById("doneBtn");
-var editForm = document.getElementById("editeProfile");
+var editForm = document.getElementById("editProfile");
 
 // Burger menu
 

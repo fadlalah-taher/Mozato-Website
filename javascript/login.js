@@ -24,6 +24,7 @@ createBtn.addEventListener("click", function(){
             })
             .then(function (response) {
                 console.log(response);
+                window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
                 }
             )
 });
@@ -37,9 +38,14 @@ loginBtn.addEventListener("click", function(){
                 data: data,
             })
             .then(function (response) {
+              if(emailInput.value == "" ||  inputPassword.value == ""){
+                window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
+              }
+              else{
               window.localStorage.setItem("user_id", response.data.user_id);
-                window.location = "file:///C:/xampp/htdocs/Mozato/pages/home.html"
-                }
+              window.location = "file:///C:/xampp/htdocs/Mozato/pages/home.html";
+              }
+              }
             ) 
 });
 
@@ -54,7 +60,6 @@ window.onclick = function(event) {
   console.log(event.target);
     if (event.target == registerSection) {
       popup.style.display = "none";
-        console.log("hello window none");
     }
 }
 

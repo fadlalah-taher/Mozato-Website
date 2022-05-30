@@ -122,7 +122,10 @@ nav .menu-item .line{
     top: 20px;
     right: 45px;
     font-size: 60px;
-}
+}/*
+#nav-box{
+    margin-left: 10%;
+}*/
 
 /* Top restaurants */
 
@@ -163,7 +166,9 @@ nav .menu-item .line{
     transform: scale(1.2);
     z-index: 3;
 }
-  
+#admin{
+    display: none;
+} 
   .card-title {
     display: block;
     text-align: center;

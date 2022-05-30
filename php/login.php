@@ -16,7 +16,7 @@ if($num_rows == 0){
     $response["response"] = "User Not Found";
 }else{
     $response["response"] = "Logged in";
-    $response["user_id"] = $id;  
+    $response["user_id"] = $id; 
 }
 $json = json_encode($response);
 echo $json;
