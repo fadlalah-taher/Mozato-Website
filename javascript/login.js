@@ -57,7 +57,7 @@ loginBtn.addEventListener("click", function(){
       data: data,
   })
   .then(function (response) {
-    if(emailInput.value == "" ||  inputPassword.value == ""){
+    if(emailInput.value == "" ||  inputPassword.value == "" || response.data["response"] == "User Not Found"){
       invalidEmail.style.display = "block";   
       //window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
     }

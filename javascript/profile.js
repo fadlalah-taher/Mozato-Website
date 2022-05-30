@@ -10,11 +10,12 @@ var editForm = document.getElementById("editProfile");
 var profileHeader = document.getElementById("header-profile");
 
 // input fields
-var fullName = document.getElementById("name");
-var age = document.getElementById("age");
-var address = document.getElementById("address");
-var phoneNumber = document.getElementById("phonenumber");
-var email = document.getElementById("email");
+var fullName = document.getElementById("name").value;
+var age = document.getElementById("age").value;
+var address = document.getElementById("address").value;
+var phoneNumber = document.getElementById("phonenumber").value;
+var email = document.getElementById("email").value;
+var inputPasswordprofile = document.getElementById("inputPassword").value;
 
 // Burger menu
 icon.addEventListener("click", function(){
@@ -42,7 +43,13 @@ profilePassword.addEventListener("click", function(){
 
 /////
 doneBtn.addEventListener("click", function(){
-  let data = new FormData(editForm);
+  //let data = new FormData(editForm);
+  let data = new FormData();
+  data.append('full_name', fullName);
+  data.append('age', age);
+  data.append('address', address);
+  data.append('password', inputPasswordprofile);
+  data.append('email', email);
   data.append('user_id', window.localStorage.getItem("user_id"));
   axios({
       method: 'post',
