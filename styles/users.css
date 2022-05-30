@@ -221,3 +221,34 @@ nav {
         display: none;
     }
   }
+  @media (max-width: 850px) {
+    .overlay a {
+        font-size: 40px
+    }
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+}
+  @media (max-width: 500px){
+    nav > .logo{
+        margin-left: -100px;
+    }
+    #span-icon{
+        margin-right: -500px;
+    }
+    .overlay a {
+        font-size: 30px;
+        margin-left: -300px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        margin-right: 50%;
+    }
+    .container .right{
+        width: 70%;
+        padding: 25px 20px;
+    }
+    
+  }
