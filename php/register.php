@@ -33,10 +33,13 @@ if($_POST["address"] == ""){
 }else{
     $address = $_POST["address"]; 
 }
-if($_POST["gender"] == ""){
+if($_POST["male"] == "" && $_POST["female"] == ""){
     die("mess around");
-}else{
-    $gender = $_POST["gender"]; 
+}else if($_POST["male"] == ""){
+    $gender = $_POST["female"];
+}
+else{
+    $gender = $_POST["male"];   
 }
 /*
 if(isset($_POST["full_name"])){

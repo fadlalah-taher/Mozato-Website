@@ -37,8 +37,7 @@ createBtn.addEventListener("click", function(){
       data: data,
   })
   .then(function (response) { 
-    console.log(response);
-    if(email.value == "" ||  number.value == "" ||  age.value == "" ||  address.value == "" ||  fullName.value == "" || (male.value == "" || female.value == "")){
+    if(response.data == "mess around"){
       createdAccount.style.display = "block";
     }
     else{
