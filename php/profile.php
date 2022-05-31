@@ -34,8 +34,8 @@ if($_POST["address"] == ""){
 }
 $user_id = $_POST["user_id"];
 
-$query = $mysqli->prepare("UPDATE users SET full_name= '$fullname', email='$email', password='$password', phone_number= '$phonenumber', address = '$address', age = '$age' WHERE user_id = '$user_id'");
-/*$query->bind_param("sssisi", $fullname, $email, $password, $phonenumber, $address, $age);*/
+$query = $mysqli->prepare("UPDATE users SET full_name=?, email=?, password=?, phone_number=?, address=?, age=? WHERE user_id=?");
+$query->bind_param("sssssii", $fullname, $email, $password, $phonenumber, $address, $age,$user_id);
 $query->execute();
 
 $response = [];

@@ -156,12 +156,12 @@ form input:focus{
 }
 .popup{
     background-color: rgb(0, 0, 0, 0.8);
+    overflow: hidden;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0%;
     display: none;
-    /*display: flex;*/
     justify-content: center;
     align-items: center;
 }
@@ -265,7 +265,12 @@ form input:focus{
 }
 
 /* Media Query phones*/
-@media (max-width: 400px){
+@media (max-width: 500px){
+    .left-container p{
+        display: none;
+    }
+}
+@media (max-width: 450px){
     form{
         width: 280px;
         margin-top: 25px;
@@ -273,15 +278,10 @@ form input:focus{
     section .header-container{
         flex-direction: column;
     }
-    .left-container p{
-        display: none;
-    }
     .left-container > h1{
         font-size: 10px;
     }
-
     .inputContainer i{
         margin-left: -30px;
     }
-    
 }
