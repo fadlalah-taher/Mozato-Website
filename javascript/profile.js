@@ -26,7 +26,6 @@ myNav.addEventListener("click", function(){
 });
 
 // unhidden password
-
 profilePassword.addEventListener("click", function(){
     if(inputPassword.type === 'password'){
         inputPassword.type = "text";

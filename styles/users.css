@@ -122,7 +122,7 @@ nav .menu-item .line{
     border-radius: 50%;
 }
 nav {
-    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
     width: 100%;
     height: 100px;
     display: flex;
@@ -134,7 +134,6 @@ nav {
     -webkit-box-shadow: 0 1rem 1rem rgba(236, 197, 201, 0.9);
           box-shadow: 0 1rem 1rem rgb(233, 176, 182, 0.9);
 }
- /**/
 .row{
     display: flex;
     flex-direction: column;
@@ -199,6 +198,7 @@ nav {
 }
 
   
+/* Media query */
 
 @media only screen and (max-width: 900px){
 /* Users */
@@ -225,33 +225,33 @@ nav {
 }
 }
 @media (max-width: 850px) {
-.overlay a {
-    font-size: 40px
-}
-.overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-}
-}
-@media (max-width: 500px){
-nav > .logo{
-    margin-left: -100px;
-}
-#span-icon{
-    margin-right: -500px;
-}
-.overlay a {
-    font-size: 30px;
-    margin-left: -300px;
-}
-.overlay .closebtn {
-    font-size: 40px;
-    margin-right: 50%;
-}
-.container .right{
-    width: 70%;
-    padding: 25px 20px;
+    .overlay a {
+        font-size: 40px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
 
-}
+@media (max-width: 500px){
+    nav > .logo{
+        margin-left: -100px;
+    }
+    #span-icon{
+        margin-right: -500px;
+    }
+    .overlay a {
+        font-size: 30px;
+        margin-left: -300px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        margin-right: 50%;
+    }
+    .container .right{
+        width: 70%;
+        padding: 25px 20px;
+    }
+}       

@@ -1,6 +1,7 @@
 <?php
-header('Access-Control-Allow-Origin: *');
+
 include("connection.php");
+
 $user_id = $_POST["user_id"];
 $query = $mysqli->prepare("Select user_role from users where user_id = ? ");
 $query->bind_param("i",$user_id);

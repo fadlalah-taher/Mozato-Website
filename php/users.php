@@ -1,6 +1,5 @@
 <?php
 
-header('Access-Control-Allow-Origin: *');
 include("connection.php");
 
 $query = $mysqli->prepare("SELECT full_name, email, phone_number, address, gender , age from users");

@@ -1,5 +1,5 @@
 <?php
-
+// waiting my partner to finish his work on restaurants to continue..
 header('Access-Control-Allow-Origin: *');
 include("connection.php");
 

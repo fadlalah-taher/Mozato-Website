@@ -1,6 +1,5 @@
 <?php
-header('Access-Control-Allow-Origin: *');
-header("Access-Control-Allow-Header: *");
+
 include("connection.php");
 
 if($_POST["full_name"] == ""){

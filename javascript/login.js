@@ -1,6 +1,7 @@
 // buttons
 var signBtn = document.getElementById("signBtn");
 var loginBtn = document.getElementById("loginBtn");
+
 // hide password icons
 var hide1 = document.getElementById("hide1");
 var hide2 = document.getElementById("hide2");
@@ -9,6 +10,7 @@ var passwordRegister = document.getElementById("passwordRegister-icon");
 var inputPassword = document.getElementById("inputPassword");
 var inputRegister = document.getElementById("inputPassword-register");
 var popup = document.querySelector(".popup");
+
 // email and register popup message
 var emailInput = document.getElementById("emailInput");
 var registerSection = document.getElementById("register-section");
@@ -83,8 +85,7 @@ window.onclick = function(event) {
     }
 }
 
-// unhidden password
-
+// hide password login form
 passwordIcon.addEventListener("click", function(){
   if(inputPassword.type === 'password'){
       inputPassword.type = "text";
@@ -98,6 +99,8 @@ passwordIcon.addEventListener("click", function(){
 
     }
 });
+
+// hide password Register form
 passwordRegister.addEventListener("click", function(){
   if(inputRegister.type === 'password'){
       inputRegister.type = "text";

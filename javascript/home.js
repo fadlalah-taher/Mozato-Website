@@ -38,6 +38,7 @@ window.onload = (function(){
       ) 
 });
 /*
+// waiting my partner to finish his work on restaurants to continue..
 window.onload = (function(){
     axios({
         method: 'post',
