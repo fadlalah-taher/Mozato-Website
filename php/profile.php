@@ -9,7 +9,6 @@ if($_POST["full_name"] == ""){
     $fullname = $_POST["full_name"];
     echo $_POST["full_name"];
 }
-//die("mess around");
 if($_POST["email"] == ""){
     die("mess around");
 }else{
