@@ -10,12 +10,12 @@ var editForm = document.getElementById("editProfile");
 var profileHeader = document.getElementById("header-profile");
 
 // input fields
-var fullName = document.getElementById("name").value;
-var age = document.getElementById("age").value;
-var address = document.getElementById("address").value;
-var phoneNumber = document.getElementById("phonenumber").value;
-var email = document.getElementById("email").value;
-var inputPasswordprofile = document.getElementById("inputPassword").value;
+var fullName = document.getElementById("name");
+var age = document.getElementById("age");
+var address = document.getElementById("address");
+var phoneNumber = document.getElementById("phonenumber");
+var email = document.getElementById("email");
+var inputPasswordprofile = document.getElementById("inputPassword");
 
 // Burger menu
 icon.addEventListener("click", function(){
@@ -40,16 +40,24 @@ profilePassword.addEventListener("click", function(){
 
       }
 });
-
+/*console.log(fullName);
+console.log(age.value);
+console.log(phoneNumber.value);
+console.log(email.value);
+console.log(address.value);*/
 /////
 doneBtn.addEventListener("click", function(){
   //let data = new FormData(editForm);
   let data = new FormData();
-  data.append('full_name', fullName);
-  data.append('age', age);
-  data.append('address', address);
-  data.append('password', inputPasswordprofile);
-  data.append('email', email);
+  //console.log(fullName);
+  //console.log(fullName.value);
+  
+  data.append('full_name', fullName.value);
+  data.append('age', age.value);
+  data.append('address', address.value);
+  data.append('phone_number', phoneNumber.value);
+  data.append('password', inputPasswordprofile.value);
+  data.append('email', email.value);
   data.append('user_id', window.localStorage.getItem("user_id"));
   axios({
       method: 'post',
@@ -57,16 +65,21 @@ doneBtn.addEventListener("click", function(){
       data: data,
   })
   .then(function (response) {
-      console.log(response);
-      profileHeader.innerHTML = "Updated Successfully";
-      //clear fields
-      age.value = '';
-      email.value = '';
-      fullName.value = '';
-      inputPassword.value = '';
-      phoneNumber.value = '';
-      address.value = '';
+      if(response.data == "mess around"){
+        profileHeader.innerHTML = "Fill the fields below";
+      }else{
+        console.log(response.data["success"]);
+        console.log(response.data[-1]);
+        profileHeader.innerHTML = "Updated Successfully";
+        //clear fields
+        age.value = '';
+        email.value = '';
+        fullName.value = '';
+        inputPassword.value = '';
+        phoneNumber.value = '';
+        address.value = '';
       }
+    }
   )
   //console.log(window.localStorage.getItem("user_id"));
 });

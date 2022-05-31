@@ -24,7 +24,7 @@ var email = document.getElementById("email");
 var male = document.getElementById("male");
 var female = document.getElementById("female");
 
-/* axios register */
+/* register */
 var createBtn = document.getElementById("createBtn");
 var registerForm = document.getElementById("createAcount");
 
@@ -37,14 +37,15 @@ createBtn.addEventListener("click", function(){
       data: data,
   })
   .then(function (response) { 
-      if(email.value == "" ||  number.value == "" ||  age.value == "" ||  address.value == "" ||  fullName.value == "" || (male.value == "" || female.value == "")){
-        createdAccount.style.display = "block";
-      }
-      else{
-        console.log(response);
-        window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
-      }
+    console.log(response);
+    if(email.value == "" ||  number.value == "" ||  age.value == "" ||  address.value == "" ||  fullName.value == "" || (male.value == "" || female.value == "")){
+      createdAccount.style.display = "block";
     }
+    else{
+      console.log(response);
+      window.location = "file:///C:/xampp/htdocs/Mozato/index.html";
+    }
+  }
   )
 });
 loginBtn.addEventListener("click", function(){

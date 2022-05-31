@@ -1,36 +1,39 @@
 <?php
 header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Header: *");
 include("connection.php");
 
-if(isset($_POST["full_name"])){
+if($_POST["full_name"] == ""){
+    die("mess around");
+}else{
     $fullname = $_POST["full_name"];
-}else{
-    die("mess around");
+    echo $_POST["full_name"];
 }
-if(isset($_POST["email"])){
-    $email = $_POST["email"];
-}else{
+//die("mess around");
+if($_POST["email"] == ""){
     die("mess around");
+}else{
+    $email = $_POST["email"]; 
 }
-if(isset($_POST["password"])){
+if($_POST["password"] == ""){
+    die("mess around");
+}else{
     $password = hash("sha256", $_POST["password"]);
-}else{
-    die("mess around");
 }       
-if(isset($_POST["phone_number"])){
-    $phonenumber = $_POST["phone_number"];  
-}else{
+if($_POST["phone_number"] == ""){
     die("mess around");
+}else{
+    $phonenumber = $_POST["phone_number"]; 
 }
-if(isset($_POST["age"])){
+if($_POST["age"] == ""){
+    die("mess around");
+}else{
     $age = $_POST["age"];
-}else{
-    die("mess around");
 }
-if(isset($_POST["address"])){
-    $address = $_POST["address"]; 
+if($_POST["address"] == ""){
+    die("mess s around");
 }else{
-    die("mess around");
+    $address = $_POST["address"]; 
 }/*
 $fullname = $_POST["full_name"];
 $email = $_POST["email"];
@@ -47,7 +50,7 @@ $query = $mysqli->prepare("UPDATE users SET full_name= '$fullname', email='$emai
 $query->execute();
 
 $response = [];
-$response["success"] = true;
+$response["success"] = "true";
 
 echo json_encode($response);
 
