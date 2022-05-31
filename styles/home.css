@@ -162,10 +162,13 @@ nav .menu-item .line{
     transform: scale(1.2);
     z-index: 3;
 }
-#admin{
+/*#admin{
     display: flex;
-    justify-content: end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;  
+}*/
+#admin{
+    display: none;
 }
 .card-title {
     display: block;

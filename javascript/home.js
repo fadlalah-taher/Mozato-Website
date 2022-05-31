@@ -2,10 +2,11 @@ var myNav = document.getElementById("myNav");
 var icon = document.getElementById("span-icon");
 var admin = document.getElementById("admin");
 var about = document.getElementById("about");
+var iconProfile = document.getElementById("profile-icon");
 // restaurant container
 var restaurantContainer = document.getElementById("restaurants-container");
 
-console.log("helo");
+
 icon.addEventListener("click", function(){
     myNav.style.width = "100%";
 });
@@ -24,12 +25,10 @@ window.onload = (function(){
         data: data,
     })
     .then(function (response) {
-        console.log(response.data[0]["user_role"]);
+        console.log("user_role"+response.data[0]["user_role"]);
         if(response.data[0]["user_role"] == 1){
-            admin.style.display = "flex";
-            admin.style.marginRight = "-8%";
-            admin.style.marginTop = "-5%";
-            admin.style.justifyContent = "end";
+            admin.style.display = "inline";
+            iconProfile.style.display = "none";
         }
         else{
             admin.style.display = "none";

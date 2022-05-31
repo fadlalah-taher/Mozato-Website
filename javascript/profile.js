@@ -57,11 +57,12 @@ doneBtn.addEventListener("click", function(){
       data: data,
   })
   .then(function (response) {
-
+    // checking if response > die or updated successfully
     if(response.data == "mess around"){
       profileHeader.innerHTML = "Fill the fields below"; // message appear when a field is still empty
     }else{
       profileHeader.innerHTML = "Updated Successfully"; // message appear when updated
+
       //clear fields
       age.value = '';
       email.value = '';
@@ -72,5 +73,4 @@ doneBtn.addEventListener("click", function(){
     }
   }
   )
-  //console.log(window.localStorage.getItem("user_id"));
 });

@@ -6,7 +6,6 @@ if($_POST["full_name"] == ""){
     die("mess around");
 }else{
     $fullname = $_POST["full_name"];
-    echo $_POST["full_name"];
 }
 if($_POST["email"] == ""){
     die("mess around");
