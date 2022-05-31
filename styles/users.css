@@ -122,7 +122,7 @@ nav .menu-item .line{
     border-radius: 50%;
 }
 nav {
-    background-color: rgba(0, 0, 0, 0.6);
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("https://images.squarespace-cdn.com/content/v1/54be6dbbe4b0ab9f360b79fa/1624736915285-EA9GFFLL1XASOK15R0R6/KOP01257.jpg?format=2500w")no-repeat center center/cover;
     width: 100%;
     height: 100px;
     display: flex;
