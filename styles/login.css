@@ -242,6 +242,13 @@ form input:focus{
 }
 
 /* Media Query*/
+
+@media only screen and (max-width: 1300px){
+    .inputContainer i{
+        margin-left: -20px;
+    }
+}
+
 @media only screen and (max-width: 900px){
     section .header-container{
         flex-direction: column;
@@ -255,8 +262,6 @@ form input:focus{
     .inputContainer i{
         margin-left: -30px;
     }
-    
-
 }
 
 /* Media Query phones*/
