@@ -40,24 +40,17 @@ profilePassword.addEventListener("click", function(){
 
       }
 });
-/*console.log(fullName);
-console.log(age.value);
-console.log(phoneNumber.value);
-console.log(email.value);
-console.log(address.value);*/
-/////
+
 doneBtn.addEventListener("click", function(){
-  //let data = new FormData(editForm);
-  let data = new FormData();
-  //console.log(fullName);
-  //console.log(fullName.value);
-  
-  data.append('full_name', fullName.value);
+  let data = new FormData(editForm);
+  // another way bellow 
+  //let data = new FormData();
+  /*data.append('full_name', fullName.value);
   data.append('age', age.value);
   data.append('address', address.value);
   data.append('phone_number', phoneNumber.value);
   data.append('password', inputPasswordprofile.value);
-  data.append('email', email.value);
+  data.append('email', email.value);*/
   data.append('user_id', window.localStorage.getItem("user_id"));
   axios({
       method: 'post',
@@ -66,11 +59,9 @@ doneBtn.addEventListener("click", function(){
   })
   .then(function (response) {
       if(response.data == "mess around"){
-        profileHeader.innerHTML = "Fill the fields below";
+        profileHeader.innerHTML = "Fill the fields below"; // message appear when a field is still empty
       }else{
-        console.log(response.data["success"]);
-        console.log(response.data[-1]);
-        profileHeader.innerHTML = "Updated Successfully";
+        profileHeader.innerHTML = "Updated Successfully"; // message appear when updated
         //clear fields
         age.value = '';
         email.value = '';
